@@ -46,7 +46,7 @@ person = {
   dept: "cs",
 };
 
-//error. didn't match the initial structure. property dept is missing
+//error. property dept is missing. didn't match the initial structure.
 person = {
   name: "miki",
   age: 22,
