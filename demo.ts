@@ -100,6 +100,7 @@ obj2 = {
 };
 
 // Dynamic/any types : looks like normal js
+//they must be used with caution
 let age: any;
 age = 25;
 console.log(age);
@@ -117,3 +118,15 @@ let mixedArr: any[] = [];
 mixedArr.push(33);
 mixedArr.push("nn");
 mixedArr.push(false);
+
+let newobj: {
+  name: any;
+  age: any;
+  dept: string;
+};
+newobj = {
+  name: "na",
+  age: 26,
+  dept: "se",
+};
+console.log(newobj);
