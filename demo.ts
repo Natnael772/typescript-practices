@@ -1,6 +1,14 @@
-let x: number = 10;
-let myname: string = "Nati";
-let y;
-y = "rr";
+const inputs = document.querySelector("input");
+let x: string;
+x = "me";
+
+//checking change in data types
+x = 12;
 console.log(x);
-// console.log(typeof x);
+
+const area = (diameter: number) => {
+  return diameter * Math.PI;
+};
+
+//Checking
+console.log(area("yo"));

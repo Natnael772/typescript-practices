@@ -1,6 +1,9 @@
-var x = 10;
-var myname = "Nati";
-var y;
-y = "rr";
+var inputs = document.querySelector("input");
+var x;
+x = "me";
+//checking change in data types
+x = 12;
 console.log(x);
-// console.log(typeof x);
+var area = function (diameter) {
+  return diameter * Math.PI;
+};
