@@ -36,8 +36,10 @@ let person = {
 };
 
 person.name = "miki"; //works fine
-person.age = "young"; //error. can't change data type once we defined certain type in object. age must be number
-person.age = 20; //works fine
+// person.age = "young";
+//error. can't change data type once we defined certain type in object. age must be number
+// person.age = 20;
+//works fine
 
 //works fine
 person = {
@@ -51,3 +53,11 @@ person = {
   name: "miki",
   age: 22,
 };
+
+//Explicit types
+let mycharacter: string;
+let myage: number;
+let isLoggedIn: boolean;
+
+myage = "nnn"; //error. type 'string' is not assignable to type 'number'
+myage = 25; //works

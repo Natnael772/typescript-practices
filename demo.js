@@ -27,8 +27,10 @@ var person = {
     dept: "software eng",
 };
 person.name = "miki"; //works fine
-person.age = "young"; //error. can't change data type once we defined certain type in object. age must be number
-person.age = 20; //works fine
+// person.age = "young";
+//error. can't change data type once we defined certain type in object. age must be number
+// person.age = 20;
+//works fine
 //works fine
 person = {
     name: "beki",
@@ -40,3 +42,9 @@ person = {
     name: "miki",
     age: 22,
 };
+//Explicit types
+var mycharacter;
+var myage;
+var isLoggedIn;
+myage = "nnn"; //error. type 'string' is not assignable to type 'number'
+myage = 25; //works
