@@ -29,3 +29,14 @@ var person = {
 person.name = "miki"; //works fine
 person.age = "young"; //error. can't change data type once we defined certain type in object. age must be number
 person.age = 20; //works fine
+//works fine
+person = {
+    name: "beki",
+    age: 25,
+    dept: "cs",
+};
+//error. didn't match the initial structure. property dept is missing
+person = {
+    name: "miki",
+    age: 22,
+};
