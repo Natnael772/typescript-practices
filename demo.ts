@@ -27,3 +27,14 @@ console.log(numbers);
 let mixed = ["nati", 21, "developer"];
 mixed.push(10); //works fine for mixed datas
 mixed[0] = 5; //works
+
+//objects
+let person = {
+  name: "nati",
+  age: 21,
+  dept: "software eng",
+};
+
+person.name = "miki"; //works fine
+person.age = "young"; //error. can't change data type once we defined certain type in object. age must be number
+person.age = 20; //works fine
