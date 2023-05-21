@@ -74,3 +74,26 @@ let mixedType: (string | number)[] = [];
 //both work fine
 mixedType.push("nn");
 mixedType.push(2);
+console.log(mixedType);
+
+// mixedType.push(false); //error. it would work if
+// let mixedType: (string | number|boolean )[] = [];
+
+let uid: string | number;
+
+//objects
+//way1
+let obj1: object;
+obj1 = {
+  name: "nati",
+  age: 22,
+};
+//way2
+let obj2: {
+  name: string;
+  age: number;
+};
+obj2 = {
+  name: "nati",
+  age: 22,
+};
