@@ -61,3 +61,16 @@ let isLoggedIn: boolean;
 
 myage = "nnn"; //error. type 'string' is not assignable to type 'number'
 myage = 25; //works
+
+//arrays
+let departments: string[] = [];
+departments = ["cs", "se", "it"]; //works
+departments.push("is"); //works
+departments.push(2); //error
+console.log(departments);
+
+//union types
+let mixedType: (string | number)[] = [];
+//both work fine
+mixedType.push("nn");
+mixedType.push(2);
