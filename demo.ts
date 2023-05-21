@@ -22,3 +22,8 @@ console.log(names);
 let numbers = [2, 4, 5, 6];
 numbers.push("str"); //error
 console.log(numbers);
+
+//works fine if the array has mixed data types
+let mixed = ["nati", 21, "developer"];
+mixed.push(10); //works fine for mixed datas
+mixed[0] = 5; //works
