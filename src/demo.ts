@@ -2,7 +2,7 @@ const inputs = document.querySelector("input");
 let x: string;
 x = "me";
 
-//checking change in data types
+//checking changeS in data types
 console.log(x);
 
 const area = (diameter: number) => {
@@ -28,7 +28,7 @@ let mixed = ["nati", 21, "developer"];
 mixed.push(10); //works fine for mixed datas
 mixed[0] = 5; //works
 
-//objects
+//Objects
 let person = {
   name: "nati",
   age: 21,
