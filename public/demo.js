@@ -2,6 +2,27 @@
 const inputs = document.querySelector("input");
 let x;
 x = "me";
+class UserAccount {
+    constructor(name, id) {
+        this.name = name;
+        this.id = id;
+    }
+}
+const user2 = new UserAccount("nati", 22);
+//error
+// const user1: User = {
+//   username: "nati",
+// };
+//error
+// const user1: User = {
+//   name: 12,
+//   id: "na",
+// };
+const user1 = {
+    name: "Nati",
+    id: 1731,
+};
+console.log(user1);
 //checking changeS in data types
 console.log(x);
 const area = (diameter) => {
