@@ -9,6 +9,9 @@ class UserAccount {
     }
 }
 const user2 = new UserAccount("nati", 22);
+function getLength(obj) {
+    return obj.length;
+}
 //error
 // const user1: User = {
 //   username: "nati",
@@ -85,6 +88,12 @@ console.log(mixedType);
 // mixedType.push(false); //error. it would work if
 // let mixedType: (string | number|boolean )[] = [];
 let uid;
+let dd;
+//structural typing
+let s1 = { x: "hi", extra: 1 };
+let s2 = s1;
+console.log(s1);
+console.log(s2);
 //objects
 //way1
 let obj1;
@@ -123,3 +132,7 @@ newobj = {
     dept: "se",
 };
 console.log(newobj);
+//tuples
+let myTuple;
+myTuple = [1, "na", false];
+console.log(myTuple[0]);
