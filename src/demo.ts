@@ -18,6 +18,22 @@ class UserAccount {
 }
 const user2: User = new UserAccount("nati", 22);
 
+//composing types: union and generics
+//Union composing
+type myBool = true | false;
+
+function getLength(obj: string | string[]) {
+  return obj.length;
+}
+
+//Generics
+//string[]
+type stringArray = Array<string>;
+type objectWithNameArray = Array<{ name: string }>;
+interface Backpack<Type> {
+  add: (obj: Type) => void;
+  get: () => Type;
+}
 //error
 // const user1: User = {
 //   username: "nati",
@@ -111,6 +127,13 @@ console.log(mixedType);
 // let mixedType: (string | number|boolean )[] = [];
 
 let uid: string | number;
+let dd: any;
+
+//structural typing
+let s1 = { x: "hi", extra: 1 };
+let s2: { x: string } = s1;
+console.log(s1);
+console.log(s2);
 
 //objects
 //way1
@@ -161,3 +184,8 @@ newobj = {
   dept: "se",
 };
 console.log(newobj);
+
+//tuples
+let myTuple: [number, string, boolean];
+myTuple = [1, "na", false];
+console.log(myTuple[0]);

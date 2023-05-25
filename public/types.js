@@ -62,10 +62,13 @@ function start(arg) {
     return typeof arg;
 }
 console.log(start(() => "str"));
-let mynums;
-let mynums2;
-let mynames;
-let mynames2;
+let intersected_type_obj1 = {
+    book_id: 1,
+    book_name: "Typescript is awesome",
+    author_id: 202,
+    author_name: ":Natty",
+};
+console.log(intersected_type_obj1);
 //generic type
 let un1 = [1, "aa"];
 //Enum
