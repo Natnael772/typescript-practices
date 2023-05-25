@@ -110,3 +110,21 @@ function getDayMessage(day) {
     return "invalid";
 }
 console.log(getDayMessage(DayOfWeek.Sat));
+function pad(s, n, direction) {
+    console.log(s, n, direction);
+    return direction;
+}
+let s = "right";
+pad("hi", 20, s);
+//error: because the third argument s is expected to have a type of "left" | "right", which is a string literal type representing either the string "left" or the string "right"
+// the variable s is defined as a regular string with the value "right". Since it's not explicitly annotated with a type, TypeScript infers its type as string. When you try to pass s as the third argument to the pad function, it results in a type error because a general string type is not assignable to the specific string literal type "left" | "right".
+//To resolve this error, Assign s with a valid string literal value of "left" or "right":
+let s3 = "right";
+pad("hi", 20, s3);
+//works
+// pad("hi", 39, "right");
+//String vs string literal
+// let name: string = "Alice";
+//string literal:
+// let direction: "left" | "right" = "left";
+// let fruit: "apple" | "banana" | "orange" = "banana";
