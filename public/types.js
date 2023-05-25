@@ -68,3 +68,45 @@ let mynames;
 let mynames2;
 //generic type
 let un1 = [1, "aa"];
+//Enum
+var Color;
+(function (Color) {
+    Color[Color["Red"] = 0] = "Red";
+    Color[Color["Green"] = 1] = "Green";
+    Color[Color["Blue"] = 2] = "Blue";
+})(Color || (Color = {}));
+let myColor = Color.Green;
+console.log(typeof myColor);
+if (myColor === Color.Green) {
+    console.log(`my color is red`);
+}
+var DayOfWeek;
+(function (DayOfWeek) {
+    DayOfWeek[DayOfWeek["Mon"] = 0] = "Mon";
+    DayOfWeek[DayOfWeek["Tue"] = 1] = "Tue";
+    DayOfWeek[DayOfWeek["Wed"] = 2] = "Wed";
+    DayOfWeek[DayOfWeek["Thu"] = 3] = "Thu";
+    DayOfWeek[DayOfWeek["Fri"] = 4] = "Fri";
+    DayOfWeek[DayOfWeek["Sat"] = 5] = "Sat";
+    DayOfWeek[DayOfWeek["Sun"] = 6] = "Sun";
+})(DayOfWeek || (DayOfWeek = {}));
+function getDayMessage(day) {
+    switch (day) {
+        case DayOfWeek.Mon:
+            return "monday";
+        case DayOfWeek.Tue:
+            return "tuesday";
+        case DayOfWeek.Wed:
+            return "wednesday";
+        case DayOfWeek.Thu:
+            return "thursday";
+        case DayOfWeek.Fri:
+            return "friday";
+        case DayOfWeek.Sat:
+            return "saturday";
+        case DayOfWeek.Sun:
+            return "sunday";
+    }
+    return "invalid";
+}
+console.log(getDayMessage(DayOfWeek.Sat));
