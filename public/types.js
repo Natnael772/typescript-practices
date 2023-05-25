@@ -49,3 +49,22 @@ const student = {
 };
 console.log(student);
 student.greet();
+//Union
+function start(arg) {
+    if (typeof arg == "string")
+        return `${arg.toString()} ${arg}`;
+    else if (Array.isArray(arg)) {
+        return "array";
+    }
+    else if (typeof arg == "function") {
+        return "function";
+    }
+    return typeof arg;
+}
+console.log(start(() => "str"));
+let mynums;
+let mynums2;
+let mynames;
+let mynames2;
+//generic type
+let un1 = [1, "aa"];
