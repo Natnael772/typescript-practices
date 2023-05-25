@@ -124,10 +124,4 @@ pad("hi", 20, s);
 //To resolve this error, Assign s with a valid string literal value of "left" or "right":
 let s3 = "right";
 pad("hi", 20, s3);
-//works
-// pad("hi", 39, "right");
-//String vs string literal
-// let name: string = "Alice";
-//string literal:
-// let direction: "left" | "right" = "left";
-// let fruit: "apple" | "banana" | "orange" = "banana";
+greet("Alice");

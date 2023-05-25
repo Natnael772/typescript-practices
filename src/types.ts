@@ -168,3 +168,9 @@ pad("hi", 20, s3);
 //string literal:
 // let direction: "left" | "right" = "left";
 // let fruit: "apple" | "banana" | "orange" = "banana";
+
+//use declare to define the type of an external JavaScript function in TypeScript:
+// declare is used to tell the compiler "this thing (usually a variable) exists already, and therefore can be referenced by other code, also there is no need to compile this statement into any JavaScript".
+declare function greet(name: string): void;
+
+greet("Alice");
