@@ -171,6 +171,33 @@ pad("hi", 20, s3);
 
 //use declare to define the type of an external JavaScript function in TypeScript:
 // declare is used to tell the compiler "this thing (usually a variable) exists already, and therefore can be referenced by other code, also there is no need to compile this statement into any JavaScript".
-declare function greet(name: string): void;
+// declare function greet(name: string): void;
 
-greet("Alice");
+// greet("Alice");
+
+// type alias
+type gender = "male" | "female";
+let m: gender = "male";
+let f: gender = "female";
+console.log(m, f);
+
+// type Car = {
+//   model: string;
+//   type: string;
+//   year: number;
+// };
+type CarModel = string;
+type CarType = string;
+type CarYear = number;
+type Car = {
+  model: CarModel;
+  type: CarType;
+  year: CarYear;
+};
+
+const myCar: Car = {
+  model: "Toyota",
+  type: "Automotive",
+  year: 2023,
+};
+// console.log(myCar);

@@ -124,4 +124,12 @@ pad("hi", 20, s);
 //To resolve this error, Assign s with a valid string literal value of "left" or "right":
 let s3 = "right";
 pad("hi", 20, s3);
-greet("Alice");
+let m = "male";
+let f = "female";
+console.log(m, f);
+const myCar = {
+    model: "Toyota",
+    type: "Automotive",
+    year: 2023,
+};
+// console.log(myCar);
