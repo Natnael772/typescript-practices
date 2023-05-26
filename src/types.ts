@@ -200,4 +200,4 @@ const myCar: Car = {
   type: "Automotive",
   year: 2023,
 };
-// console.log(myCar);
+console.log(myCar);
