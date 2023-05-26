@@ -144,3 +144,23 @@ const cr1 = {
     color: "Red",
 };
 console.log(cr1);
+function calcArea(s) {
+    if (s.kind == "square") {
+        return s.size * s.size;
+    }
+    else {
+        return s.width * s.height;
+    }
+}
+let shape1 = {
+    kind: "square",
+    size: 10,
+};
+console.log(calcArea(shape1));
+//Type paarameter / generic type
+//type parameters allow to create generic types and functions that can work with different types. They provide flexibility and reusability by allowing  to define a placeholder for a type that will be specified when the generic type or function is used.
+function identity(arg) {
+    return arg;
+}
+const result = identity("Typescript type parameter demostration");
+console.log(result, typeof result);

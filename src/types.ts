@@ -218,9 +218,46 @@ console.log(rectangle1);
 interface ColoredRectangle extends Rectangle {
   color: string;
 }
+
 const cr1: ColoredRectangle = {
   height: 10,
   width: 20,
   color: "Red",
 };
 console.log(cr1);
+
+//Discriminated union
+interface Square {
+  kind: "square";
+  size: number;
+}
+interface Rect {
+  kind: "rectangle";
+  width: number;
+  height: number;
+}
+//
+type Shape = Square | Rect;
+
+function calcArea(s: Shape): number {
+  if (s.kind == "square") {
+    return s.size * s.size;
+  } else {
+    return s.width * s.height;
+  }
+}
+
+let shape1: Shape = {
+  kind: "square",
+  size: 10,
+};
+console.log(calcArea(shape1));
+
+//Type paarameter / generic type
+//type parameters allow to create generic types and functions that can work with different types. They provide flexibility and reusability by allowing  to define a placeholder for a type that will be specified when the generic type or function is used.
+
+function identity<T>(arg: T): T {
+  return arg;
+}
+const result = identity<string>("Typescript type parameter demostration");
+console.log(result, typeof result);
