@@ -8,7 +8,7 @@
 //     return a + b;
 //   }
 //error:  type of the parameter isnot specified. we must explicitly specify types of the parameters.
-//This one works fine
 // function add(a: number, b: number) {
 //     return a + b;
 //   }
+//works fine
