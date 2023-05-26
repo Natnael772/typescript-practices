@@ -133,3 +133,8 @@ const myCar = {
     year: 2023,
 };
 console.log(myCar);
+const rectangle1 = {
+    height: 20,
+    width: 30,
+};
+console.log(rectangle1);

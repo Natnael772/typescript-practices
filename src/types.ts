@@ -201,3 +201,14 @@ const myCar: Car = {
   year: 2023,
 };
 console.log(myCar);
+
+//interfaces : similar to type alias except they only apply to object types
+interface Rectangle {
+  height: number;
+  width: number;
+}
+const rectangle1: Rectangle = {
+  height: 20,
+  width: 30,
+};
+console.log(rectangle1);
