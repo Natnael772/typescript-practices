@@ -118,7 +118,7 @@ function pad(s, n, direction) {
     return direction;
 }
 let s = "right";
-pad("hi", 20, s);
+// pad("hi", 20, s);
 //error: because the third argument s is expected to have a type of "left" | "right", which is a string literal type representing either the string "left" or the string "right"
 // the variable s is defined as a regular string with the value "right". Since it's not explicitly annotated with a type, TypeScript infers its type as string. When you try to pass s as the third argument to the pad function, it results in a type error because a general string type is not assignable to the specific string literal type "left" | "right".
 //To resolve this error, Assign s with a valid string literal value of "left" or "right":
@@ -166,4 +166,4 @@ const result = identity("Typescript type parameter demostration");
 console.log(result, typeof result);
 let num1 = { unchangeableNo: 1 };
 //error because unchno is readonly number anc we can't write on it
-num1.unchangeableNo = 11;
+// num1.unchangeableNo = 11;
