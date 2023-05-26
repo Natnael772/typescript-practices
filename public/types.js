@@ -138,3 +138,9 @@ const rectangle1 = {
     width: 30,
 };
 console.log(rectangle1);
+const cr1 = {
+    height: 10,
+    width: 20,
+    color: "Red",
+};
+console.log(cr1);

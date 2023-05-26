@@ -212,3 +212,15 @@ const rectangle1: Rectangle = {
   width: 30,
 };
 console.log(rectangle1);
+
+//Extending interfaces
+
+interface ColoredRectangle extends Rectangle {
+  color: string;
+}
+const cr1: ColoredRectangle = {
+  height: 10,
+  width: 20,
+  color: "Red",
+};
+console.log(cr1);
