@@ -164,3 +164,6 @@ function identity(arg) {
 }
 const result = identity("Typescript type parameter demostration");
 console.log(result, typeof result);
+let num1 = { unchangeableNo: 1 };
+//error because unchno is readonly number anc we can't write on it
+num1.unchangeableNo = 11;

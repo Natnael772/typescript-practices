@@ -261,3 +261,12 @@ function identity<T>(arg: T): T {
 }
 const result = identity<string>("Typescript type parameter demostration");
 console.log(result, typeof result);
+
+//Readonly modifier
+interface Num {
+  readonly unchangeableNo: number;
+}
+let num1: Num = { unchangeableNo: 1 };
+
+//error because unchno is readonly number anc we can't write on it
+num1.unchangeableNo = 11;
