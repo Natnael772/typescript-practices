@@ -181,3 +181,4 @@ printId(101);
 // OK
 printId("202");
 // Error
+// printId({id:"29"}
