@@ -172,3 +172,12 @@ function printName(obj) { }
 //Both work
 printName({ first: "nati" });
 printName({ first: "nati", last: "deyas" });
+//union
+function printId(id) {
+    console.log("Your ID is: " + id);
+}
+// OK
+printId(101);
+// OK
+printId("202");
+// Error
