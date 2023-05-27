@@ -182,3 +182,30 @@ printId(101);
 printId("202");
 // Error
 // printId({id:"29"}
+// Interface vs type
+// interface Animal{
+//     name:string
+// }
+// type Animal = {
+//     name:string
+// }
+// interface Bear extends Animal{
+//     honey:boolean
+// }
+// type Bear = Animal & {
+//     honey:boolean
+// }
+//Adding new fields
+// interface Window {
+//   title: string;
+// }
+// interface Window {
+//   name: string;
+// }
+// type Window = {
+//   title: string;
+// };
+// type Window = {
+//   name: string;
+// };
+// Error: Duplicate identifier 'Window'.
