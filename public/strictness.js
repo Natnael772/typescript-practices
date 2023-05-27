@@ -12,3 +12,21 @@
 //     return a + b;
 //   }
 //works fine
+//2. strictNullChecks
+// /When using the strictNullChecks compiler option in TypeScript, you need to handle nullable and undefinedable values explicitly in your code.
+// let name: string;
+// name = null; // No error without strictNullChecks
+// function greet(name) {
+//   console.log(`Hello, ${name}!`);
+// }
+// greet(null); // No error without strictNullChecks
+//But if enabled, it will be error
+// let name: string;
+// name = null; // Error: Type 'null' is not assignable to type 'string'
+// function greet(name: string) {
+//   console.log(`Hello, ${name}!`);
+// }
+// greet(null); // Error: Argument of type 'null' is not assignable to parameter of type 'string'
+//Assigning null to a variable of type string (name) raises an error because null is not assignable to the string type.
+//Passing null as an argument to the greet function raises an error because the function's parameter (name) is explicitly declared as a string, and null is not assignable to that type.
+//noEmiltOnError: our ts code will only compile if it has no error.

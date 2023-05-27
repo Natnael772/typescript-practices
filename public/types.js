@@ -167,3 +167,8 @@ console.log(result, typeof result);
 let num1 = { unchangeableNo: 1 };
 //error because unchno is readonly number anc we can't write on it
 // num1.unchangeableNo = 11;
+//Optional types
+function printName(obj) { }
+//Both work
+printName({ first: "nati" });
+printName({ first: "nati", last: "deyas" });
