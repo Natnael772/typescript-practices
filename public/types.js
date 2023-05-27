@@ -4,6 +4,7 @@
 //By default, these primitive types are not objects and do not have any properties or methods associated with them.
 //However, TypeScript provides wrapper objects for these primitive types, allowing you to treat them as objects and access their associated properties and methods.
 //These wrapper objects are referred to as boxed types.
+Object.defineProperty(exports, "__esModule", { value: true });
 const num = new Number(12);
 console.log(num.toFixed());
 const str = new String("hello");
@@ -209,3 +210,18 @@ printId("202");
 //   name: string;
 // };
 // Error: Duplicate identifier 'Window'.
+//Literal types
+// 1. string literal types
+// let status: "success" | "error";
+// status = "success"; // valid
+// status = "error"; // valid
+// status = "pending"; // Error: Type '"pending"' is not assignable to type '"success" | "error"'
+// 2. Numeric literal types
+// let age: 18 | 21;
+// age = 18; // valid
+// age = 21; // valid
+// age = 25; // Error: Type '25' is not assignable to type '18 | 21'
+// 3. Boolean literal types
+// let isAdmin: true;
+// isAdmin = true; // valid
+// isAdmin = false; // Error: Type 'false' is not assignable to type 'true'
