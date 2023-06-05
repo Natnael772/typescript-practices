@@ -31,3 +31,6 @@ const ex2 = {
 //tuple
 let myTuple1;
 myTuple1 = ["Hello", 42, true];
+console.log(myTuple[0]);
+console.log(myTuple[1]);
+console.log(myTuple[2]);
