@@ -25,3 +25,9 @@ function draw(circle) {
 }
 draw({ color: "blue", radius: 23 });
 const ex = { contents: "con" };
+const ex2 = {
+    contents: [2],
+};
+//tuple
+let myTuple1;
+myTuple1 = ["Hello", 42, true];
