@@ -30,3 +30,6 @@
 //Assigning null to a variable of type string (name) raises an error because null is not assignable to the string type.
 //Passing null as an argument to the greet function raises an error because the function's parameter (name) is explicitly declared as a string, and null is not assignable to that type.
 //noEmiltOnError: our ts code will only compile if it has no error.
+//strictNullChecks
+// let name: string | null = null; // Valid, explicitly allowing null
+// let age: number = null; // Error, assigning null to a non-nullable typ

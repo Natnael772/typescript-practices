@@ -222,6 +222,6 @@ printId("202");
 // age = 21; // valid
 // age = 25; // Error: Type '25' is not assignable to type '18 | 21'
 // 3. Boolean literal types
-// let isAdmin: true;
+// let isAdmin: true
 // isAdmin = true; // valid
 // isAdmin = false; // Error: Type 'false' is not assignable to type 'true'
