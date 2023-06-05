@@ -52,3 +52,29 @@ function processInput(value) {
 processInput("Hello");
 processInput(20);
 processInput(true);
+// function add(a: number, b: number): number;
+// function add(a: string, b: string): string;
+// function add(a: any, b: any): any {
+//   return a + b;
+// }
+// console.log(add(2, 3));
+// console.log(add('Hello, ', 'world')
+class Animal {
+    makeSound() {
+        console.log("Generic animal sound");
+    }
+}
+class Dog extends Animal {
+    makeSound() {
+        console.log("Woof!");
+    }
+}
+class Cat extends Animal {
+    makeSound() {
+        console.log("Meow!");
+    }
+}
+const cat1 = new Cat();
+cat1.makeSound();
+const a = () => { };
+console.log(typeof Cat);
