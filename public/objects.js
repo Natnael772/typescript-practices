@@ -19,3 +19,9 @@ const signature1 = {
     length: 4,
 };
 console.log(signature1);
+function draw(circle) {
+    console.log(`Color : ${circle.color}`);
+    console.log(`Radius : ${circle.radius}`);
+}
+draw({ color: "blue", radius: 23 });
+const ex = { contents: "con" };
