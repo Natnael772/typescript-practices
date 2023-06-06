@@ -35,3 +35,9 @@ class GenericNumber<NumType> {
 }
 let myGenNo = new GenericNumber<number>(0, (x, y) => x + y);
 console.log(myGenNo);
+
+function loggingIdentity<Type extends { length: number }>(arg: Type): Type {
+  console.log(arg.length);
+
+  return arg;
+}
