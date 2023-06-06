@@ -17,3 +17,16 @@ function identity(arg) {
     return arg;
 }
 let myIdent = identity;
+//generic class
+class GenericNumber {
+    constructor(zeroValue, add) {
+        this.zeroValue = zeroValue;
+        this.add = add;
+    }
+}
+let myGenNo = new GenericNumber(0, (x, y) => x + y);
+console.log(myGenNo);
+function loggingIdentity(arg) {
+    console.log(arg.length);
+    return arg;
+}
