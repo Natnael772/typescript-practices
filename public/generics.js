@@ -13,3 +13,7 @@ function myIdentity(arg) {
 }
 myIdentity("2");
 myIdentity("Nati");
+function identity(arg) {
+    return arg;
+}
+let myIdent = identity;
