@@ -4,6 +4,8 @@
 //However, TypeScript provides wrapper objects for these primitive types, allowing you to treat them as objects and access their associated properties and methods.
 //These wrapper objects are referred to as boxed types.
 
+import { types } from "util";
+
 const num: Number = new Number(12);
 console.log(num.toFixed());
 
@@ -153,7 +155,7 @@ function pad(s: string, n: number, direction: "left" | "right"): string {
   return direction;
 }
 let s = "right";
-pad("hi", 20, s);
+// pad("hi", 20, s);
 //error: because the third argument s is expected to have a type of "left" | "right", which is a string literal type representing either the string "left" or the string "right"
 // the variable s is defined as a regular string with the value "right". Since it's not explicitly annotated with a type, TypeScript infers its type as string. When you try to pass s as the third argument to the pad function, it results in a type error because a general string type is not assignable to the specific string literal type "left" | "right".
 //To resolve this error, Assign s with a valid string literal value of "left" or "right":
@@ -269,4 +271,72 @@ interface Num {
 let num1: Num = { unchangeableNo: 1 };
 
 //error because unchno is readonly number anc we can't write on it
-num1.unchangeableNo = 11;
+// num1.unchangeableNo = 11;
+
+//Optional types
+function printName(obj: { first: string; last?: string }) {}
+
+//Both work
+printName({ first: "nati" });
+printName({ first: "nati", last: "deyas" });
+
+//union
+function printId(id: number | string) {
+  console.log("Your ID is: " + id);
+}
+// OK
+printId(101);
+// OK
+printId("202");
+// Error
+// printId({id:"29"}
+
+// Interface vs type
+// interface Animal{
+//     name:string
+// }
+// type Animal = {
+//     name:string
+// }
+// interface Bear extends Animal{
+//     honey:boolean
+// }
+// type Bear = Animal & {
+//     honey:boolean
+// }
+
+//Adding new fields
+// interface Window {
+//   title: string;
+// }
+// interface Window {
+//   name: string;
+// }
+
+// type Window = {
+//   title: string;
+// };
+
+// type Window = {
+//   name: string;
+// };
+
+// Error: Duplicate identifier 'Window'.
+
+//Literal types
+// 1. string literal types
+// let status: "success" | "error";
+// status = "success"; // valid
+// status = "error"; // valid
+// status = "pending"; // Error: Type '"pending"' is not assignable to type '"success" | "error"'
+
+// 2. Numeric literal types
+// let age: 18 | 21;
+// age = 18; // valid
+// age = 21; // valid
+// age = 25; // Error: Type '25' is not assignable to type '18 | 21'
+
+// 3. Boolean literal types
+// let isAdmin: true
+// isAdmin = true; // valid
+// isAdmin = false; // Error: Type 'false' is not assignable to type 'true'

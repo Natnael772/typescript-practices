@@ -29,3 +29,5 @@ const phone1 = new Phone("samsung", "1234");
 console.log(phone1);
 phone1.switch();
 phone1.welcome();
+
+
