@@ -232,9 +232,18 @@ printId("202");
 // userInput = 5;
 // userInput = "Nnn";
 // userName = userInput;
+//unknown needs type check (typeof) to assign
 //no error
 // let userInput: any;
 // let userName: string;
 // userInput = 5;
 // userInput = "Nnn";
 // userName = userInput;
+//functions that throw errors return nothing
+//also use never for infinite loops
+function generateError(msg, code) {
+    throw { msg: msg, errCode: code };
+    // while(true){}
+}
+const result1 = generateError("Error occured", 500);
+console.log(typeof result1);
