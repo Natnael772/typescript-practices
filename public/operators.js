@@ -9,3 +9,4 @@ const nameVal = getProperty(p1, "name");
 let s = "hello";
 let n = "s";
 console.log(typeof n); //string
+//type name:string
