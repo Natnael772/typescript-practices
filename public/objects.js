@@ -34,3 +34,14 @@ myTuple1 = ["Hello", 42, true];
 console.log(myTuple[0]);
 console.log(myTuple[1]);
 console.log(myTuple[2]);
+//enum
+var Role;
+(function (Role) {
+    Role[Role["ADMIN"] = 0] = "ADMIN";
+    Role[Role["SUPERADMIN"] = 1] = "SUPERADMIN";
+})(Role || (Role = {}));
+let user;
+const user11 = {
+    name: "nati",
+    role: Role.ADMIN,
+};

@@ -225,3 +225,16 @@ printId("202");
 // let isAdmin: true
 // isAdmin = true; // valid
 // isAdmin = false; // Error: Type 'false' is not assignable to type 'true'
+//Unknown and any types
+//error
+// let userInput: unknown;
+// let userName: string;
+// userInput = 5;
+// userInput = "Nnn";
+// userName = userInput;
+//no error
+// let userInput: any;
+// let userName: string;
+// userInput = 5;
+// userInput = "Nnn";
+// userName = userInput;
