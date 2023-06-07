@@ -21,7 +21,8 @@ console.log(typeof n); //string
 
 //indexed access types
 type Car = { name: string; price: number };
-type name = Car["name"];
+// type name = Car["name"];
+
 //type name:string
 type union = Car["name" | "price"];
 //type union :string|number
