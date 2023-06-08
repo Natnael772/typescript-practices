@@ -23,4 +23,28 @@ class Smartphone extends Electronics {
         super(name, imei);
         console.log("Child class");
     }
+    welcome() {
+        console.log("welcome");
+    }
 }
+const myPhone = new Smartphone("Samsung", 2335865854);
+//getter and setter
+class Person {
+    constructor(name) {
+        this._name = name;
+    }
+    get Name() {
+        return this._name;
+    }
+    set Name(newname) {
+        if (newname.length > 0) {
+            this._name = newname;
+        }
+        else {
+            console.log("invalid name");
+        }
+    }
+}
+const personn = new Person("Nati");
+personn.Name = "";
+console.log(personn.Name);
