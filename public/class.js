@@ -48,3 +48,8 @@ class Person {
 const personn = new Person("Nati");
 personn.Name = "";
 console.log(personn.Name);
+class Sonar {
+    ping() {
+        console.log("ping");
+    }
+}
